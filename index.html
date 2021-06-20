@@ -13,7 +13,7 @@
          threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
     <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
 
-    <a-scene environment="preset: egypt">
+    <a-scene environment="preset: egypt" background="color: red">
 
 
       <a-assets>
@@ -26,7 +26,7 @@
         <!-- escena -->
         <a-asset-item id="sala-obj" src="pauli.obj"></a-asset-item>
         <!-- <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item> -->
-        
+
         <!-- videos -->
         <video id="cuerpos" autoplay loop="true" src="cuerpos.mp4"></video>
         <video id="fuego" autoplay loop="true" src="fuego.mp4"></video>
@@ -37,7 +37,7 @@
 
       <!-- Using the asset management system. -->
       <!--  <a-obj-model src="#sala-obj" mtl="#crate-mtl"></a-obj-model> -->
-      <a-obj-model src="#sala-obj"></a-obj-model>
+      <a-obj-model src="#sala-obj" position="0 -100 0"></a-obj-model>
 
       <!-- Using the asset management system. -->
       <a-video src="#cuerpos" width="9" height="14" position="-20 0 -20"></a-video>
