@@ -22,13 +22,27 @@
       </a-assets>
       <a-assets>
       -->
-        <video id="small" autoplay loop="true" src="small.mp4"></video>
+
+        <!-- escena -->
+        <a-asset-item id="sala-obj" src="pauli.obj"></a-asset-item>
+        <!-- <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item> -->
+        
+        <!-- videos -->
+        <video id="cuerpos" autoplay loop="true" src="cuerpos.mp4"></video>
+        <video id="fuego" autoplay loop="true" src="fuego.mp4"></video>
+        <video id="rocas" autoplay loop="true" src="rocas.mp4"></video>
+
+
       </a-assets>
 
       <!-- Using the asset management system. -->
-      <a-video src="#small" width="9" height="14" position="-20 0 -20"></a-video>
-      <a-video src="#small" width="9" height="14" position="20 0 0"></a-video>
-      <a-video src="#small" width="9" height="14" position="-20 0 20"></a-video>
+      <!--  <a-obj-model src="#sala-obj" mtl="#crate-mtl"></a-obj-model> -->
+      <a-obj-model src="#sala-obj"></a-obj-model>
+
+      <!-- Using the asset management system. -->
+      <a-video src="#cuerpos" width="9" height="14" position="-20 0 -20"></a-video>
+      <a-video src="#fuego" width="9" height="14" position="20 0 0"></a-video>
+      <a-video src="#rocas" width="9" height="14" position="-20 0 20"></a-video>
 
       <!-- Defining the URL inline. Not recommended but more comfortable for web developers.
       <a-video src="airbending.mp4"></a-video>
