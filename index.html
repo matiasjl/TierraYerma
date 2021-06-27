@@ -25,19 +25,19 @@
 
         <!-- escena -->
         <a-asset-item id="sala-obj" src="pauli.obj"></a-asset-item>
-        <!-- <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item> -->
+        <a-asset-item id="sala-mtl" src="pauli.mtl"></a-asset-item>
 
         <!-- videos -->
-        <video id="cuerpos" autoplay loop="true" src="cuerpos.mp4"></video>
-        <video id="fuego" autoplay loop="true" src="fuego.mp4"></video>
-        <video id="rocas" autoplay loop="true" src="rocas.mp4"></video>
+        <video id="cuerpos" autoplay loop="true" src="https://adrianacarlagorlero.com.ar/wp-content/uploads/2021/06/manada.mp4"></video>
+        <video id="fuego" autoplay loop="true" src="https://adrianacarlagorlero.com.ar/wp-content/uploads/2021/06/fuego_cerca_baja.mp4"></video>
+        <video id="rocas" autoplay loop="true" src="https://adrianacarlagorlero.com.ar/wp-content/uploads/2021/06/josefa.mp4"></video>
 
 
       </a-assets>
 
       <!-- Using the asset management system. -->
       <!--  <a-obj-model src="#sala-obj" mtl="#crate-mtl"></a-obj-model> -->
-      <a-obj-model src="#sala-obj" position="-60 -20 50"></a-obj-model>
+      <a-obj-model src="#sala-obj" mtl="#sala-mtl" position="-60 -20 50"></a-obj-model>
 
       <!-- Using the asset management system. -->
       <a-video src="#cuerpos" width="18" height="28" position="-20 0 -20"></a-video>
